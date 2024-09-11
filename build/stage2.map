@@ -1,0 +1,260 @@
+Archive member included to satisfy reference by file (symbol)
+
+/opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+                              /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj (__udivdi3)
+/opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+                              /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj (__umoddi3)
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/asm/entry.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/asm/x86.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/ctype.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/disk.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/memory.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/string.obj
+LOAD /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a
+                0x00000500                        phys = 0x500
+                0x00000500                        . = phys
+
+.entry          0x00000500       0xc0
+                0x00000500                        __entry_start = .
+ *(.entry)
+ .entry         0x00000500       0xc0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/asm/entry.obj
+                0x00000500                entry
+
+.text           0x000005c0     0x1b86
+                0x000005c0                        __text_start = .
+ *(.text)
+ .text          0x000005c0      0x1a5 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/asm/x86.obj
+                0x000005c0                x86_outb
+                0x000005cb                x86_inb
+                0x000005d4                x86_Disk_GetDriveParams
+                0x00000697                x86_Disk_Reset
+                0x000006e7                x86_Disk_Read
+ .text          0x00000765       0x55 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/ctype.obj
+                0x00000765                islower
+                0x0000078e                toupper
+ .text          0x000007ba      0x199 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/disk.obj
+                0x000007ba                DISK_Initialize
+                0x0000082a                DISK_LBA2CHS
+                0x000008b7                DISK_ReadSectors
+ .text          0x00000953      0xa6a /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+                0x00000953                FAT_ReadBootSector
+                0x00000970                FAT_ReadFat
+                0x000009a4                FAT_Initialize
+                0x00000bd8                FAT_ClusterToLba
+                0x00000bf9                FAT_OpenEntry
+                0x00000dc1                FAT_NextCluster
+                0x00000e0e                FAT_Read
+                0x00001062                FAT_ReadEntry
+                0x00001083                FAT_Close
+                0x000010d1                FAT_FindFile
+                0x00001236                FAT_Open
+ .text          0x000013bd       0xf2 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+                0x000013bd                start
+ .text          0x000014af       0xf5 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/memory.obj
+                0x000014af                memcpy
+                0x00001501                memset
+                0x00001544                memcmp
+ .text          0x000015a4      0x895 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+                0x000015a4                putchr
+                0x000015d3                putcolor
+                0x00001605                getchr
+                0x00001627                getcolor
+                0x0000164c                setcursor
+                0x000016bd                clrscr
+                0x0000174b                scrollback
+                0x00001839                putc
+                0x0000195b                puts
+                0x0000198a                printf_unsigned
+                0x00001a2e                printf_signed
+                0x00001a8b                printf
+                0x00001da0                print_buffer
+ .text          0x00001e39       0xb6 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/string.obj
+                0x00001e39                strchr
+                0x00001e77                strcpy
+                0x00001ec9                strlen
+ *fill*         0x00001eef        0x1 
+ .text          0x00001ef0      0x11a /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+                0x00001ef0                __udivdi3
+ *fill*         0x0000200a        0x6 
+ .text          0x00002010      0x136 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+                0x00002010                __umoddi3
+
+.data           0x00002148        0xc
+                0x00002148                        __data_start = .
+ *(.data)
+ .data          0x00002148        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/ctype.obj
+ .data          0x00002148        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/disk.obj
+ .data          0x00002148        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+ .data          0x00002148        0x8 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+                0x00002148                KernelLoadBuffer
+                0x0000214c                Kernel
+ .data          0x00002150        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/memory.obj
+ .data          0x00002150        0x4 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+                0x00002150                g_ScreenBuffer
+ .data          0x00002154        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/string.obj
+ .data          0x00002154        0x0 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .data          0x00002154        0x0 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.rodata         0x00002154      0x21e
+                0x00002154                        __rodata_start = .
+ *(.rodata)
+ .rodata        0x00002154      0x135 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+ .rodata        0x00002289       0x2f /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+ .rodata        0x000022b8       0xba /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+                0x000022b8                SCREEN_WIDTH
+                0x000022bc                SCREEN_HEIGHT
+                0x000022c0                DEFAULT_COLOR
+                0x000022c4                g_HexChars
+
+.eh_frame       0x00002374       0xd8
+ .eh_frame      0x00002374       0x64 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .eh_frame      0x000023d8       0x74 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.bss            0x0000244c       0x14
+                0x0000244c                        __bss_start = .
+ *(.bss)
+ .bss           0x0000244c        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/ctype.obj
+ .bss           0x0000244c        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/disk.obj
+ .bss           0x0000244c        0xc /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+ .bss           0x00002458        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+ .bss           0x00002458        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/memory.obj
+ .bss           0x00002458        0x8 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+                0x00002458                g_ScreenX
+                0x0000245c                g_ScreenY
+ .bss           0x00002460        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/string.obj
+ .bss           0x00002460        0x0 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .bss           0x00002460        0x0 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+                0x00002460                        __end = .
+OUTPUT(/Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2.bin binary)
+
+.debug_info     0x00000000     0x1eb9
+ .debug_info    0x00000000       0xcb /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/ctype.obj
+ .debug_info    0x000000cb      0x2b1 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/disk.obj
+ .debug_info    0x0000037c      0x9a9 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+ .debug_info    0x00000d25      0x2bf /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+ .debug_info    0x00000fe4      0x1e8 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/memory.obj
+ .debug_info    0x000011cc      0x54c /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+ .debug_info    0x00001718      0x132 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/string.obj
+ .debug_info    0x0000184a      0x32c /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_info    0x00001b76      0x343 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_abbrev   0x00000000      0xb9c
+ .debug_abbrev  0x00000000       0x77 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/ctype.obj
+ .debug_abbrev  0x00000077      0x140 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/disk.obj
+ .debug_abbrev  0x000001b7      0x24d /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+ .debug_abbrev  0x00000404      0x14c /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+ .debug_abbrev  0x00000550       0xe2 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/memory.obj
+ .debug_abbrev  0x00000632      0x1f6 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+ .debug_abbrev  0x00000828       0xa8 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/string.obj
+ .debug_abbrev  0x000008d0      0x15b /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x00000a2b      0x171 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_aranges  0x00000000      0x120
+ .debug_aranges
+                0x00000000       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/ctype.obj
+ .debug_aranges
+                0x00000020       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/disk.obj
+ .debug_aranges
+                0x00000040       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+ .debug_aranges
+                0x00000060       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+ .debug_aranges
+                0x00000080       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/memory.obj
+ .debug_aranges
+                0x000000a0       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+ .debug_aranges
+                0x000000c0       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/string.obj
+ .debug_aranges
+                0x000000e0       0x20 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x00000100       0x20 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_line     0x00000000      0xf91
+ .debug_line    0x00000000       0x81 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/ctype.obj
+ .debug_line    0x00000081       0xea /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/disk.obj
+ .debug_line    0x0000016b      0x51f /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+ .debug_line    0x0000068a       0xbb /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+ .debug_line    0x00000745       0xcc /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/memory.obj
+ .debug_line    0x00000811      0x398 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+ .debug_line    0x00000ba9       0x97 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/string.obj
+ .debug_line    0x00000c40      0x180 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_line    0x00000dc0      0x1d1 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_str      0x00000000     0x12a3
+ .debug_str     0x00000000       0xea /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/ctype.obj
+ .debug_str     0x000000ea      0x1c5 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/disk.obj
+ .debug_str     0x000002af      0x5e8 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+ .debug_str     0x00000897      0x1e2 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+ .debug_str     0x00000a79      0x125 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/memory.obj
+ .debug_str     0x00000b9e      0x24e /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+ .debug_str     0x00000dec       0xf1 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/string.obj
+ .debug_str     0x00000edd      0x1e3 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_str     0x000010c0      0x1e3 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_line_str
+                0x00000000      0x87d
+ .debug_line_str
+                0x00000000       0xa0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/ctype.obj
+ .debug_line_str
+                0x000000a0      0x100 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/disk.obj
+ .debug_line_str
+                0x000001a0      0x11f /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+ .debug_line_str
+                0x000002bf      0x111 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+ .debug_line_str
+                0x000003d0       0xf9 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/memory.obj
+ .debug_line_str
+                0x000004c9      0x105 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+ .debug_line_str
+                0x000005ce       0xa3 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/string.obj
+ .debug_line_str
+                0x00000671      0x106 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_line_str
+                0x00000777      0x106 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.comment        0x00000000       0xab
+ .comment       0x00000000       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/ctype.obj
+ .comment       0x00000013       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/disk.obj
+ .comment       0x00000026       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+ .comment       0x00000039       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+ .comment       0x0000004c       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/memory.obj
+ .comment       0x0000005f       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+ .comment       0x00000072       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/string.obj
+ .comment       0x00000085       0x13 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .comment       0x00000098       0x13 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_frame    0x00000000      0x524
+ .debug_frame   0x00000000       0x54 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/ctype.obj
+ .debug_frame   0x00000054       0x80 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/disk.obj
+ .debug_frame   0x000000d4      0x184 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/fat.obj
+ .debug_frame   0x00000258       0x2c /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/main.obj
+ .debug_frame   0x00000284       0x74 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/memory.obj
+ .debug_frame   0x000002f8      0x1b8 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/stdio.obj
+ .debug_frame   0x000004b0       0x74 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/stage2/c/string.obj
+
+.debug_loclists
+                0x00000000      0x978
+ .debug_loclists
+                0x00000000      0x50c /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_loclists
+                0x0000050c      0x46c /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_rnglists
+                0x00000000       0x49
+ .debug_rnglists
+                0x00000000       0x2a /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_rnglists
+                0x0000002a       0x1f /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)

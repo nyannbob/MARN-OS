@@ -1,0 +1,607 @@
+Archive member included to satisfy reference by file (symbol)
+
+/opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+                              /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj (__udivdi3)
+/opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+                              /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj (__umoddi3)
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/asm/arch/i686/gdt.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/asm/arch/i686/idt.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/asm/arch/i686/io.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/asm/arch/i686/isr.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/memory.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/hal/hal.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/gdt.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/idt.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/io.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isrs_gen.obj
+LOAD /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/pic.obj
+LOAD /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a
+                0x00100000                        phys = 0x100000
+                0x00100000                        . = phys
+
+.entry          0x00100000       0x91
+                0x00100000                        __entry_start = .
+ *(.entry)
+ .entry         0x00100000       0x91 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+                0x00100000                start
+
+.text           0x001000a0     0x3526
+                0x001000a0                        __text_start = .
+ *(.text)
+ .text          0x001000a0       0x25 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/asm/arch/i686/gdt.obj
+                0x001000a0                i686_GDT_Load
+ *fill*         0x001000c5        0xb 
+ .text          0x001000d0        0xd /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/asm/arch/i686/idt.obj
+                0x001000d0                i686_IDT_Load
+ *fill*         0x001000dd        0x3 
+ .text          0x001000e0       0x3d /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/asm/arch/i686/io.obj
+                0x001000e0                i686_outb
+                0x001000eb                i686_inb
+                0x001000f4                i686_Panic
+                0x001000f6                i686_EnableInterrupts
+                0x001000f8                i686_DisableInterrupts
+                0x001000fa                haddPaar
+                0x00100107                subzero
+ *fill*         0x0010011d        0x3 
+ .text          0x00100120      0xa6d /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/asm/arch/i686/isr.obj
+                0x00100120                i686_ISR0
+                0x00100129                i686_ISR1
+                0x00100132                i686_ISR2
+                0x0010013b                i686_ISR3
+                0x00100144                i686_ISR4
+                0x0010014d                i686_ISR5
+                0x00100156                i686_ISR6
+                0x0010015f                i686_ISR7
+                0x00100168                i686_ISR8
+                0x0010016f                i686_ISR9
+                0x00100178                i686_ISR10
+                0x0010017f                i686_ISR11
+                0x00100186                i686_ISR12
+                0x0010018d                i686_ISR13
+                0x00100194                i686_ISR14
+                0x0010019b                i686_ISR15
+                0x001001a4                i686_ISR16
+                0x001001ad                i686_ISR17
+                0x001001b4                i686_ISR18
+                0x001001bd                i686_ISR19
+                0x001001c6                i686_ISR20
+                0x001001cf                i686_ISR21
+                0x001001d6                i686_ISR22
+                0x001001df                i686_ISR23
+                0x001001e8                i686_ISR24
+                0x001001f1                i686_ISR25
+                0x001001fa                i686_ISR26
+                0x00100203                i686_ISR27
+                0x0010020c                i686_ISR28
+                0x00100215                i686_ISR29
+                0x0010021e                i686_ISR30
+                0x00100227                i686_ISR31
+                0x00100230                i686_ISR32
+                0x00100239                i686_ISR33
+                0x00100242                i686_ISR34
+                0x0010024b                i686_ISR35
+                0x00100254                i686_ISR36
+                0x0010025d                i686_ISR37
+                0x00100266                i686_ISR38
+                0x0010026f                i686_ISR39
+                0x00100278                i686_ISR40
+                0x00100281                i686_ISR41
+                0x0010028a                i686_ISR42
+                0x00100293                i686_ISR43
+                0x0010029c                i686_ISR44
+                0x001002a5                i686_ISR45
+                0x001002ae                i686_ISR46
+                0x001002b7                i686_ISR47
+                0x001002c0                i686_ISR48
+                0x001002c9                i686_ISR49
+                0x001002d2                i686_ISR50
+                0x001002db                i686_ISR51
+                0x001002e4                i686_ISR52
+                0x001002ed                i686_ISR53
+                0x001002f6                i686_ISR54
+                0x001002ff                i686_ISR55
+                0x00100308                i686_ISR56
+                0x00100311                i686_ISR57
+                0x0010031a                i686_ISR58
+                0x00100323                i686_ISR59
+                0x0010032c                i686_ISR60
+                0x00100335                i686_ISR61
+                0x0010033e                i686_ISR62
+                0x00100347                i686_ISR63
+                0x00100350                i686_ISR64
+                0x00100359                i686_ISR65
+                0x00100362                i686_ISR66
+                0x0010036b                i686_ISR67
+                0x00100374                i686_ISR68
+                0x0010037d                i686_ISR69
+                0x00100386                i686_ISR70
+                0x0010038f                i686_ISR71
+                0x00100398                i686_ISR72
+                0x001003a1                i686_ISR73
+                0x001003aa                i686_ISR74
+                0x001003b3                i686_ISR75
+                0x001003bc                i686_ISR76
+                0x001003c5                i686_ISR77
+                0x001003ce                i686_ISR78
+                0x001003d7                i686_ISR79
+                0x001003e0                i686_ISR80
+                0x001003e9                i686_ISR81
+                0x001003f2                i686_ISR82
+                0x001003fb                i686_ISR83
+                0x00100404                i686_ISR84
+                0x0010040d                i686_ISR85
+                0x00100416                i686_ISR86
+                0x0010041f                i686_ISR87
+                0x00100428                i686_ISR88
+                0x00100431                i686_ISR89
+                0x0010043a                i686_ISR90
+                0x00100443                i686_ISR91
+                0x0010044c                i686_ISR92
+                0x00100455                i686_ISR93
+                0x0010045e                i686_ISR94
+                0x00100467                i686_ISR95
+                0x00100470                i686_ISR96
+                0x00100479                i686_ISR97
+                0x00100482                i686_ISR98
+                0x0010048b                i686_ISR99
+                0x00100494                i686_ISR100
+                0x0010049d                i686_ISR101
+                0x001004a6                i686_ISR102
+                0x001004af                i686_ISR103
+                0x001004b8                i686_ISR104
+                0x001004c1                i686_ISR105
+                0x001004ca                i686_ISR106
+                0x001004d3                i686_ISR107
+                0x001004dc                i686_ISR108
+                0x001004e5                i686_ISR109
+                0x001004ee                i686_ISR110
+                0x001004f7                i686_ISR111
+                0x00100500                i686_ISR112
+                0x00100509                i686_ISR113
+                0x00100512                i686_ISR114
+                0x0010051b                i686_ISR115
+                0x00100524                i686_ISR116
+                0x0010052d                i686_ISR117
+                0x00100536                i686_ISR118
+                0x0010053f                i686_ISR119
+                0x00100548                i686_ISR120
+                0x00100551                i686_ISR121
+                0x0010055a                i686_ISR122
+                0x00100563                i686_ISR123
+                0x0010056c                i686_ISR124
+                0x00100575                i686_ISR125
+                0x0010057e                i686_ISR126
+                0x00100587                i686_ISR127
+                0x00100590                i686_ISR128
+                0x0010059c                i686_ISR129
+                0x001005a8                i686_ISR130
+                0x001005b4                i686_ISR131
+                0x001005c0                i686_ISR132
+                0x001005cc                i686_ISR133
+                0x001005d8                i686_ISR134
+                0x001005e4                i686_ISR135
+                0x001005f0                i686_ISR136
+                0x001005fc                i686_ISR137
+                0x00100608                i686_ISR138
+                0x00100614                i686_ISR139
+                0x00100620                i686_ISR140
+                0x0010062c                i686_ISR141
+                0x00100638                i686_ISR142
+                0x00100644                i686_ISR143
+                0x00100650                i686_ISR144
+                0x0010065c                i686_ISR145
+                0x00100668                i686_ISR146
+                0x00100674                i686_ISR147
+                0x00100680                i686_ISR148
+                0x0010068c                i686_ISR149
+                0x00100698                i686_ISR150
+                0x001006a4                i686_ISR151
+                0x001006b0                i686_ISR152
+                0x001006bc                i686_ISR153
+                0x001006c8                i686_ISR154
+                0x001006d4                i686_ISR155
+                0x001006e0                i686_ISR156
+                0x001006ec                i686_ISR157
+                0x001006f8                i686_ISR158
+                0x00100704                i686_ISR159
+                0x00100710                i686_ISR160
+                0x0010071c                i686_ISR161
+                0x00100728                i686_ISR162
+                0x00100734                i686_ISR163
+                0x00100740                i686_ISR164
+                0x0010074c                i686_ISR165
+                0x00100758                i686_ISR166
+                0x00100764                i686_ISR167
+                0x00100770                i686_ISR168
+                0x0010077c                i686_ISR169
+                0x00100788                i686_ISR170
+                0x00100794                i686_ISR171
+                0x001007a0                i686_ISR172
+                0x001007ac                i686_ISR173
+                0x001007b8                i686_ISR174
+                0x001007c4                i686_ISR175
+                0x001007d0                i686_ISR176
+                0x001007dc                i686_ISR177
+                0x001007e8                i686_ISR178
+                0x001007f4                i686_ISR179
+                0x00100800                i686_ISR180
+                0x0010080c                i686_ISR181
+                0x00100818                i686_ISR182
+                0x00100824                i686_ISR183
+                0x00100830                i686_ISR184
+                0x0010083c                i686_ISR185
+                0x00100848                i686_ISR186
+                0x00100854                i686_ISR187
+                0x00100860                i686_ISR188
+                0x0010086c                i686_ISR189
+                0x00100878                i686_ISR190
+                0x00100884                i686_ISR191
+                0x00100890                i686_ISR192
+                0x0010089c                i686_ISR193
+                0x001008a8                i686_ISR194
+                0x001008b4                i686_ISR195
+                0x001008c0                i686_ISR196
+                0x001008cc                i686_ISR197
+                0x001008d8                i686_ISR198
+                0x001008e4                i686_ISR199
+                0x001008f0                i686_ISR200
+                0x001008fc                i686_ISR201
+                0x00100908                i686_ISR202
+                0x00100914                i686_ISR203
+                0x00100920                i686_ISR204
+                0x0010092c                i686_ISR205
+                0x00100938                i686_ISR206
+                0x00100944                i686_ISR207
+                0x00100950                i686_ISR208
+                0x0010095c                i686_ISR209
+                0x00100968                i686_ISR210
+                0x00100974                i686_ISR211
+                0x00100980                i686_ISR212
+                0x0010098c                i686_ISR213
+                0x00100998                i686_ISR214
+                0x001009a4                i686_ISR215
+                0x001009b0                i686_ISR216
+                0x001009bc                i686_ISR217
+                0x001009c8                i686_ISR218
+                0x001009d4                i686_ISR219
+                0x001009e0                i686_ISR220
+                0x001009ec                i686_ISR221
+                0x001009f8                i686_ISR222
+                0x00100a04                i686_ISR223
+                0x00100a10                i686_ISR224
+                0x00100a1c                i686_ISR225
+                0x00100a28                i686_ISR226
+                0x00100a34                i686_ISR227
+                0x00100a40                i686_ISR228
+                0x00100a4c                i686_ISR229
+                0x00100a58                i686_ISR230
+                0x00100a64                i686_ISR231
+                0x00100a70                i686_ISR232
+                0x00100a7c                i686_ISR233
+                0x00100a88                i686_ISR234
+                0x00100a94                i686_ISR235
+                0x00100aa0                i686_ISR236
+                0x00100aac                i686_ISR237
+                0x00100ab8                i686_ISR238
+                0x00100ac4                i686_ISR239
+                0x00100ad0                i686_ISR240
+                0x00100adc                i686_ISR241
+                0x00100ae5                i686_ISR242
+                0x00100aee                i686_ISR243
+                0x00100af7                i686_ISR244
+                0x00100b00                i686_ISR245
+                0x00100b09                i686_ISR246
+                0x00100b12                i686_ISR247
+                0x00100b1b                i686_ISR248
+                0x00100b24                i686_ISR249
+                0x00100b2d                i686_ISR250
+                0x00100b36                i686_ISR251
+                0x00100b3f                i686_ISR252
+                0x00100b48                i686_ISR253
+                0x00100b51                i686_ISR254
+                0x00100b5a                i686_ISR255
+ .text          0x00100b8d      0x391 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+                0x00100b8d                printLion
+                0x00100d86                Overflow
+                0x00100de7                setBitNumber
+                0x00100e40                divByZero
+                0x00100edc                timer
+                0x00100ef5                keyboard
+ .text          0x00100f1e       0xf5 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/memory.obj
+                0x00100f1e                memcpy
+                0x00100f70                memset
+                0x00100fb3                memcmp
+ .text          0x00101013      0x883 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+                0x00101013                putchr
+                0x00101042                putcolor
+                0x00101074                getchr
+                0x00101096                getcolor
+                0x001010bb                setcursor
+                0x0010112c                clrscr
+                0x001011ba                scrollback
+                0x001012a8                putc
+                0x001013b8                puts
+                0x001013e7                printf_unsigned
+                0x0010148b                printf_signed
+                0x001014e8                printf
+                0x001017fd                print_buffer
+ .text          0x00101896       0x1d /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/hal/hal.obj
+                0x00101896                HAL_Initialize
+ .text          0x001018b3       0x1d /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/gdt.obj
+                0x001018b3                i686_GDT_Initialize
+ .text          0x001018d0       0xba /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/idt.obj
+                0x001018d0                i686_IDT_SetGate
+                0x00101931                i686_IDT_EnableGate
+                0x00101951                i686_IDT_DisableGate
+                0x00101971                i686_IDT_Initialize
+ .text          0x0010198a       0x1b /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/io.obj
+                0x0010198a                i686_iowait
+ .text          0x001019a5       0xcc /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+                0x001019a5                i686_IRQ_Handler
+                0x00101a17                i686_IRQ_Initialize
+                0x00101a5e                i686_IRQ_RegisterHandler
+ .text          0x00101a71      0x1b2 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+                0x00101a71                i686_ISR_Initialize
+                0x00101ab3                i686_ISR_Handler
+                0x00101bff                i686_ISR_RegisterHandler
+ .text          0x00101c23     0x1489 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isrs_gen.obj
+                0x00101c23                i686_ISR_InitializeGates
+ .text          0x001030ac      0x2b6 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/pic.obj
+                0x001030ac                i686_PIC_Configure
+                0x0010319e                i686_PIC_SendEndOfInterrupt
+                0x001031ce                i686_PIC_Disable
+                0x00103208                i686_PIC_Mask
+                0x0010325c                i686_PIC_Unmask
+                0x001032b2                i686_PIC_ReadIrqRequestRegister
+                0x0010330a                i686_PIC_ReadInServiceRegister
+ *fill*         0x00103362        0xe 
+ .text          0x00103370      0x11a /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+                0x00103370                __udivdi3
+ *fill*         0x0010348a        0x6 
+ .text          0x00103490      0x136 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+                0x00103490                __umoddi3
+
+.data           0x001035c8       0x2a
+                0x001035c8                        __data_start = .
+ *(.data)
+ .data          0x001035c8        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+ .data          0x001035c8        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/memory.obj
+ .data          0x001035c8        0x4 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+                0x001035c8                g_ScreenBuffer
+ .data          0x001035cc        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/hal/hal.obj
+ .data          0x001035cc       0x1e /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/gdt.obj
+                0x001035cc                g_GDT
+                0x001035e4                g_GDTDescriptor
+ *fill*         0x001035ea        0x2 
+ .data          0x001035ec        0x6 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/idt.obj
+                0x001035ec                g_IDTDescriptor
+ .data          0x001035f2        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/io.obj
+ .data          0x001035f2        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+ .data          0x001035f2        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+ .data          0x001035f2        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isrs_gen.obj
+ .data          0x001035f2        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/pic.obj
+ .data          0x001035f2        0x0 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .data          0x001035f2        0x0 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.rodata         0x00103600      0xf13
+                0x00103600                        __rodata_start = .
+ *(.rodata)
+ .rodata        0x00103600      0x716 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+ *fill*         0x00103d16        0x2 
+ .rodata        0x00103d18       0xba /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+                0x00103d18                SCREEN_WIDTH
+                0x00103d1c                SCREEN_HEIGHT
+                0x00103d20                DEFAULT_COLOR
+                0x00103d24                g_HexChars
+ *fill*         0x00103dd2        0x2 
+ .rodata        0x00103dd4       0x25 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+ *fill*         0x00103df9        0x7 
+ .rodata        0x00103e00      0x713 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+
+.eh_frame       0x00104514       0xd8
+ .eh_frame      0x00104514       0x64 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .eh_frame      0x00104578       0x74 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.bss            0x00104600     0x1c6c
+                0x00104600                        __bss_start = .
+ *(.bss)
+ .bss           0x00104600     0x1000 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/asm/arch/i686/isr.obj
+ .bss           0x00105600        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+ .bss           0x00105600        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/memory.obj
+ .bss           0x00105600        0x8 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+                0x00105600                g_ScreenX
+                0x00105604                g_ScreenY
+ .bss           0x00105608        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/hal/hal.obj
+ .bss           0x00105608        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/gdt.obj
+ *fill*         0x00105608       0x18 
+ .bss           0x00105620      0x800 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/idt.obj
+                0x00105620                g_IDT
+ .bss           0x00105e20        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/io.obj
+ .bss           0x00105e20       0x40 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+                0x00105e20                g_IRQHandlers
+ .bss           0x00105e60      0x400 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+                0x00105e60                g_ISRHandlers
+ .bss           0x00106260        0x0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isrs_gen.obj
+ .bss           0x00106260        0xc /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/pic.obj
+                0x00106260                PIC_ICW1
+                0x00106264                PIC_ICW4
+                0x00106268                PIC_CMD
+ .bss           0x0010626c        0x0 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .bss           0x0010626c        0x0 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+                0x0010626c                        __end = .
+OUTPUT(/Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel.bin binary)
+
+.debug_info     0x00000000     0x2c07
+ .debug_info    0x00000000      0x393 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+ .debug_info    0x00000393      0x1e8 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/memory.obj
+ .debug_info    0x0000057b      0x54c /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+ .debug_info    0x00000ac7       0xb3 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/hal/hal.obj
+ .debug_info    0x00000b7a      0x1fa /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/gdt.obj
+ .debug_info    0x00000d74      0x24e /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/idt.obj
+ .debug_info    0x00000fc2       0xac /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/io.obj
+ .debug_info    0x0000106e      0x2f3 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+ .debug_info    0x00001361      0x2c7 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+ .debug_info    0x00001628      0xd09 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_info    0x00002331      0x267 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/pic.obj
+ .debug_info    0x00002598      0x32c /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_info    0x000028c4      0x343 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_abbrev   0x00000000      0xf2c
+ .debug_abbrev  0x00000000      0x1b1 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+ .debug_abbrev  0x000001b1       0xe2 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/memory.obj
+ .debug_abbrev  0x00000293      0x1f6 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+ .debug_abbrev  0x00000489       0x5a /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/hal/hal.obj
+ .debug_abbrev  0x000004e3       0xf0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/gdt.obj
+ .debug_abbrev  0x000005d3      0x122 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/idt.obj
+ .debug_abbrev  0x000006f5       0x6d /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/io.obj
+ .debug_abbrev  0x00000762      0x180 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+ .debug_abbrev  0x000008e2      0x165 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+ .debug_abbrev  0x00000a47       0xbf /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_abbrev  0x00000b06      0x15a /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/pic.obj
+ .debug_abbrev  0x00000c60      0x15b /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x00000dbb      0x171 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_aranges  0x00000000      0x1a8
+ .debug_aranges
+                0x00000000       0x28 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+ .debug_aranges
+                0x00000028       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/memory.obj
+ .debug_aranges
+                0x00000048       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+ .debug_aranges
+                0x00000068       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/hal/hal.obj
+ .debug_aranges
+                0x00000088       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/gdt.obj
+ .debug_aranges
+                0x000000a8       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/idt.obj
+ .debug_aranges
+                0x000000c8       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/io.obj
+ .debug_aranges
+                0x000000e8       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+ .debug_aranges
+                0x00000108       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+ .debug_aranges
+                0x00000128       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_aranges
+                0x00000148       0x20 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/pic.obj
+ .debug_aranges
+                0x00000168       0x20 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x00000188       0x20 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_rnglists
+                0x00000000       0x64
+ .debug_rnglists
+                0x00000000       0x1b /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+ .debug_rnglists
+                0x0000001b       0x2a /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_rnglists
+                0x00000045       0x1f /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_line     0x00000000      0xfb1
+ .debug_line    0x00000000      0x134 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+ .debug_line    0x00000134       0xcc /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/memory.obj
+ .debug_line    0x00000200      0x396 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+ .debug_line    0x00000596       0x6c /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/hal/hal.obj
+ .debug_line    0x00000602       0x5c /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/gdt.obj
+ .debug_line    0x0000065e       0x89 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/idt.obj
+ .debug_line    0x000006e7       0x5e /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/io.obj
+ .debug_line    0x00000745       0xcb /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+ .debug_line    0x00000810       0xe2 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+ .debug_line    0x000008f2      0x25f /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_line    0x00000b51      0x10f /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/pic.obj
+ .debug_line    0x00000c60      0x180 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_line    0x00000de0      0x1d1 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_str      0x00000000     0x251a
+ .debug_str     0x00000000      0x1ed /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+ .debug_str     0x000001ed      0x125 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/memory.obj
+ .debug_str     0x00000312      0x24f /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+ .debug_str     0x00000561      0x12e /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/hal/hal.obj
+ .debug_str     0x0000068f      0x2fa /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/gdt.obj
+ .debug_str     0x00000989      0x291 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/idt.obj
+ .debug_str     0x00000c1a       0xf6 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/io.obj
+ .debug_str     0x00000d10      0x23a /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+ .debug_str     0x00000f4a      0x1d9 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+ .debug_str     0x00001123      0xd5e /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_str     0x00001e81      0x2d3 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/pic.obj
+ .debug_str     0x00002154      0x1e3 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_str     0x00002337      0x1e3 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_line_str
+                0x00000000      0xc8b
+ .debug_line_str
+                0x00000000      0x112 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+ .debug_line_str
+                0x00000112       0xe3 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/memory.obj
+ .debug_line_str
+                0x000001f5       0xfa /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+ .debug_line_str
+                0x000002ef       0xb0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/hal/hal.obj
+ .debug_line_str
+                0x0000039f       0xee /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/gdt.obj
+ .debug_line_str
+                0x0000048d       0xf4 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/idt.obj
+ .debug_line_str
+                0x00000581       0xf0 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/io.obj
+ .debug_line_str
+                0x00000671      0x10f /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+ .debug_line_str
+                0x00000780      0x109 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+ .debug_line_str
+                0x00000889      0x103 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_line_str
+                0x0000098c       0xf3 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/pic.obj
+ .debug_line_str
+                0x00000a7f      0x106 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_line_str
+                0x00000b85      0x106 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.comment        0x00000000       0xf7
+ .comment       0x00000000       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+ .comment       0x00000013       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/memory.obj
+ .comment       0x00000026       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+ .comment       0x00000039       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/hal/hal.obj
+ .comment       0x0000004c       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/gdt.obj
+ .comment       0x0000005f       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/idt.obj
+ .comment       0x00000072       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/io.obj
+ .comment       0x00000085       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+ .comment       0x00000098       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+ .comment       0x000000ab       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isrs_gen.obj
+ .comment       0x000000be       0x13 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/pic.obj
+ .comment       0x000000d1       0x13 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .comment       0x000000e4       0x13 /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
+
+.debug_frame    0x00000000      0x66c
+ .debug_frame   0x00000000       0xec /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/main.obj
+ .debug_frame   0x000000ec       0x74 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/memory.obj
+ .debug_frame   0x00000160      0x1b8 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/stdio.obj
+ .debug_frame   0x00000318       0x34 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/hal/hal.obj
+ .debug_frame   0x0000034c       0x34 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/gdt.obj
+ .debug_frame   0x00000380       0x94 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/idt.obj
+ .debug_frame   0x00000414       0x34 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/io.obj
+ .debug_frame   0x00000448       0x74 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/irq.obj
+ .debug_frame   0x000004bc       0x80 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isr.obj
+ .debug_frame   0x0000053c       0x34 /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_frame   0x00000570       0xfc /Users/rishabhjain/Desktop/nanobyte_os-Part10/build/kernel/c/arch/i686/pic.obj
+
+.debug_loclists
+                0x00000000      0x978
+ .debug_loclists
+                0x00000000      0x50c /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_udivdi3.o)
+ .debug_loclists
+                0x0000050c      0x46c /opt/homebrew/Cellar/i686-elf-gcc/13.2.0/lib/gcc/i686-elf/13.2.0/libgcc.a(_umoddi3.o)
